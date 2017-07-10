@@ -1,0 +1,9 @@
+<!-- <%= form_for :product, :html => {url: products_add_path} do |f| %>
+  <%= f.label :product %> <%= f.text_field :product, :html => { :id => "product"} %>
+  <%= f.submit %>
+<% end %> -->
+
+<%= form_tag "/" do %>
+  <%= text_field_tag (:product) %>
+  <%= submit_tag :html => {:value => "add_to_cart",  }%>
+<% end %>
